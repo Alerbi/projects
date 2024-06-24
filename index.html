@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>E-Commerce</title>
+    <title>VogueVibe</title>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    </style>
   </head>
   <body>
+    <header>
+      <p class="logo">VogueVibe</p>
+      <!-- hidden types for mobile display -->
+      <p class="headerTypes hidden">Home Men Women Kids Contact</p>
+      <div class="off-screen-menu">
+        <ul class="ham-ul">
+          <div class="search-div">
+            <input id="search-bar" type="text" placeholder="Search" />
+            <button class="search-btn">
+              <img class="search-img" src="clothes-pics/magnifying-glass.png" />
+            </button>
+          </div>
+          <li>Home</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>Kids</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!--shop cart and account still needed-->
+
     <script src="script.js"></script>
   </body>
 </html>
