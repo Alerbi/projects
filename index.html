@@ -1,58 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>VogueVibe</title>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-    </style>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Altos-store</title>
   </head>
   <body>
-    <header>
-      <p class="logo">VogueVibe</p>
-      <!-- hidden types for mobile display -->
-      <p class="headerTypes hidden">Home Men Women Kids Contact</p>
-      <div class="off-screen-menu">
-        <ul class="ham-ul">
-          <li class="ham-li" id="home">
-            <div class="li-div">
-              <img class="li-pics" src="clothes-pics/li-homePic.jpg" />
-              <span class="li-p">Home</span>
-            </div>
-          </li>
-          <li class="ham-li" id="mensWear">
-            <div class="li-div">
-              <img class="li-pics" src="clothes-pics/li-menPic.jpg" />
-              <span class="li-p">Men</span>
-            </div>
-          </li>
-          <li class="ham-li" id="womensWear">
-            <div class="li-div">
-              <img class="li-pics" src="clothes-pics/li-womanPic.jpg" />
-              <span class="li-p">Women</span>
-            </div>
-          </li>
-          <li class="ham-li" id="kidsWear">
-            <div class="li-div">
-              <img class="li-pics" src="clothes-pics/li-kidPics.jpg" />
-              <span class="li-p">Kids</span>
-            </div>
-          </li>
-          <p class="ham-sign-Contact"><u>Sign in</u> | <u>Contact</u></p>
-        </ul>
-      </div>
+    <!-- Start of the navigation-->
+    <header class="gen-header-container">
+      <div class="inner-header-container">
+        <!--Logo, Hamburger and Search bar-->
+        <div class="ham-menu-search-logo-cta">
+          <a href="home.html" target="_blank" class="business-logo">
+            <span>Altos Store</span></a
+          >
+          <input type="search" name="" id="" class="search-circle" />
+          <ion-icon name="menu-outline" class="ham-menu"></ion-icon>
+        </div>
 
-      <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <nav class="navigation-bar hidden">
+          <ul>
+            <!-- close, person, cart-->
+            <span class="inner-icons">
+              <ion-icon
+                name="close-outline"
+                class="close-btn sidebar-icon"
+              ></ion-icon>
+              <a href="signin.html" target="_blank" class="person-icon">
+                <ion-icon
+                  name="person-outline"
+                  class="user-icon sidebar-icon"
+                ></ion-icon
+              ></a>
+              <a href="cart.html" target="_blank" class="cart-icon">
+                <ion-icon
+                  name="cart-outline"
+                  class="cart sidebar-icon"
+                ></ion-icon
+              ></a>
+            </span>
+
+            <li>
+              <a href="home.html" target="_blank">Home</a>
+            </li>
+            <li>
+              <a href="men.html" target="_blank">Men</a>
+            </li>
+            <li>
+              <a href="women.html" target="_blank">Women</a>
+            </li>
+            <li>
+              <a href="kids.html" target="_blank">Kids</a>
+            </li>
+            <li>
+              <a href="contact.html" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
+    <!-- End of the header -->
 
-    <!--shop cart and account still needed-->
+    <!-- Hero section area -->
+    <section class="hero-content-section">
+      <div class="hero-content">
+        <h1>Discover And Find Your Own Fashion</h1>
+        <p>
+          Description: Discover eco-conscious clothing and accessories that
+          reflect your unique spirit. Shop our curated collection and find your
+          perfect fit.
+        </p>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="hero">
+        <img
+          src="clothes-pics/heros/woman fashion 5.jpg"
+          alt="Image of lady with a jacket"
+          width="500px"
+        />
+
+        <!-- Hero Buttons-->
+        <div class="hero-btn">
+          <button class="btn-hero men-btn">Men's Wears</button>
+          <button class="btn-hero women-btn">Women's Wears</button>
+        </div>
+      </div>
+    </section>
+    <!-- End of Hero section -->
+
+    <div class="biggest-labels">
+      <h2>Men's Deals</h2>
+    </div>
+
+    <!-- Start of men's section -->
+    <!--Main content -->
+    <main class="main-gen">
+      <!-- Men's collections -->
+      <!-- One -->
+      <section class="collection-one gen-collection">
+        <a href="men.html" target="_blank" class="main-content-link first-link">
+          <img
+            src="clothes-pics/T-Shirt men/T-Shirt-men (3).jpg"
+            alt="man in purple T-shirt"
+            width="100px"
+          />
+        </a>
+      </section>
+
+      <!--Two -->
+      <section class="collection-two gen-collection">
+        <a
+          href="men.html"
+          target="_blank"
+          class="main-content-link second-link"
+        >
+          <img
+            src="clothes-pics/T-Shirt men/T-Shirt-men (2).jpg"
+            alt="man in black T-shirt"
+            width="100px"
+          />
+        </a>
+      </section>
+
+      <!--Three -->
+      <section class="collection-three gen-collection">
+        <a href="men.html" target="_blank" class="main-content-link third-link">
+          <img
+            src="clothes-pics/T-Shirt men/T-Shirt-men (11).jpg"
+            alt="man in black on black hat"
+            width="100px"
+          />
+        </a>
+      </section>
+
+      <!-- Four -->
+      <section class="collection-four gen-collection">
+        <a
+          href="men.html"
+          target="_blank"
+          class="main-content-link fourth-link"
+        >
+          <img
+            src="clothes-pics/T-Shirt men/T-Shirt-men (5).jpg"
+            alt="man in black on black hat"
+            width="100px"
+          />
+        </a>
+      </section>
+    </main>
+    <!--End of men's collection-->
+
+    <div class="container-btn">
+      <button type="button" class="shop-men-btn">
+        <span class="inner-btn-text">Shop men's wears</span>
+      </button>
+    </div>
+
+    <div class="biggest-labels">
+      <h2>Women's Deals</h2>
+    </div>
+
+    <!-- Start of women's collection -->
+    <main class="women-section-gen-cta">
+      <!-- First-woman -->
+      <section class="woman-collection-first women-shop">
+        <a href="women.html" target="_blank">
+          <img
+            src="clothes-pics/T-Shirt woman/T-Shirt-woman (2).jpg"
+            alt="A lady wearing a gray T-shirt"
+            width="200px"
+          />
+        </a>
+      </section>
+
+      <!-- Second-woman-->
+      <section class="woman-collection-second women-shop">
+        <a href="women.html" target="_blank">
+          <img
+            src="clothes-pics/T-Shirt woman/T-Shirt-woman (9).jpg"
+            alt="A lady wearing yellow T-shirt"
+            width="200px"
+          />
+        </a>
+      </section>
+
+      <!--Third woman -->
+      <section class="woman-collection-third women-shop">
+        <a href="women.html" target="_blank">
+          <img
+            src="clothes-pics/T-Shirt woman/T-Shirt-woman (3).jpg"
+            alt="A lady wearing white T shirt"
+            width="200px"
+          />
+        </a>
+      </section>
+
+      <!-- Fourth woman -->
+      <section class="woman-collection-fourth women-shop">
+        <a href="women.html" target="_blank">
+          <img
+            src="clothes-pics/T-Shirt woman/T-Shirt-woman.jpg"
+            alt="A lady wearing black T-shirt"
+            width="200px"
+          />
+        </a>
+      </section>
+    </main>
+
+    <div class="container-btn women-section-btn">
+      <button type="button" class="shop-women-btn">
+        <span class="inner-btn-text">Shop Women's wears</span>
+      </button>
+    </div>
+    <!-- End of women's collection -->
+
+    <!-- Sign Up-->
+    <main class="login-wrapper">
+      <!-- Sign Up for Free -->
+      <section class="sign-up-wrapper">
+        <h2>Join Our club and & get 15% off</h2>
+
+        <button type="button" class="sign-up-free">
+          <span>Sign up for free </span
+          ><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon>
+        </button>
+      </section>
+      <!-- End Sign Up for Free -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="gen-footer-cta">
+      <!-- Quick Links -->
+      <section class="quick-links footer-link">
+        <div class="quick-links-heading footer-heading">
+          <h2>Quick Links</h2>
+        </div>
+
+        <nav class="footer-quick-links-nav footer-nav">
+          <ul class="ul-quick-links ul-links">
+            <li>
+              <a href="reviews.html" target="_blank">Reviews</a>
+            </li>
+            <li>
+              <a href="terms-of-service.html" target="_blank"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a href="payment.html" target="_blank">Payment</a>
+            </li>
+            <li>
+              <a href="contact.html" target="_blank">Contact Us</a>
+            </li>
+            <li>
+              <a href="faq.html" target="blank">FAQ</a>
+            </li>
+            <li>
+              <a href="search.html" target="_blank">Search</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!--End of Quick Links -->
+
+      <!-- Start of Main Menu -->
+      <section class="main-menu-links footer-link">
+        <div class="main-menu-heading footer-heading">
+          <h2>Main Menu</h2>
+        </div>
+        <nav class="footer-main-menu-nav footer-nav">
+          <ul class="main-menu-nav ul-links">
+            <li>
+              <a href="accessories.html" target="_blank">Accessories</a>
+            </li>
+            <li>
+              <a href="women.html" target="_blank">Women's Wears</a>
+            </li>
+            <li>
+              <a href="men.html" target="_blank">Men's Wears</a>
+            </li>
+            <li>
+              <a href="footwears.html" target="_blank">Footwears</a>
+            </li>
+            <li>
+              <a href="kids.html" target="_blank">Kids Wears</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!-- End of Main Menu -->
+
+      <!--Follow Us -->
+      <section class="follow-us-main-wrapper footer-link">
+        <div class="follow-us-cta footer-heading">
+          <h2>Follow Us</h2>
+        </div>
+        <span class="social-icons">
+          <ion-icon name="logo-twitter" class="social-link"></ion-icon>
+          <ion-icon name="logo-facebook" class="social-link"></ion-icon>
+          <ion-icon name="logo-instagram" class="social-link"></ion-icon>
+        </span>
+      </section>
+      <!--End of Follow Us-->
+
+      <!-- Contact Us -->
+      <section class="contact-us-wrapper">
+        <div class="contact-us-cta">
+          <a href="mailto:email@example.com">email@example.com</a>
+        </div>
+      </section>
+      <!-- End of Contact Us -->
+    </footer>
   </body>
 </html>
