@@ -65,7 +65,6 @@ a {
   display: flex;
   justify-content: space-between;
   line-height: 2;
-  border: 1px solid;
 }
 
 .gen-header-container .inner-header-container > .ham-menu-search-logo-cta {
@@ -83,7 +82,7 @@ a {
   .inner-header-container
   > .ham-menu-search-logo-cta
   > .business-logo {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: var(--font-family-heading);
   font-weight: 600;
   cursor: pointer;
@@ -94,7 +93,6 @@ a {
   .inner-header-container
   > .ham-menu-search-logo-cta
   > .business-logo
-  + .search-circle
   + .ham-menu {
   font-size: 1.7rem;
   cursor: pointer;
@@ -105,8 +103,7 @@ a {
 .gen-header-container
   .inner-header-container
   > .ham-menu-search-logo-cta
-  > .business-logo
-  + .search-circle {
+  > .business-logo {
   font-size: 0.8rem;
   border-radius: 4rem;
   margin: 0.5rem 1rem 0 0;
@@ -115,7 +112,6 @@ a {
 }
 
 /* Hamburger menu */
-
 .gen-header-container
   > .inner-header-container
   > .ham-menu-search-logo-cta
@@ -136,9 +132,11 @@ a {
   width: 22rem;
   z-index: 999;
   backdrop-filter: blur(5px);
-  background-color: #ececec;
+  background-color: #fafaff;
   box-shadow: -10px 0 10px rba(0, 0, 0, 0.1);
   text-align: center;
+  color: #fff;
+  transition: all 0.3s;
 }
 
 /* For hamburger menu */
@@ -193,7 +191,7 @@ ul li a:hover::after {
   ul
   .inner-icons
   .sidebar-icon:nth-child(2) {
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .gen-header-container
@@ -213,7 +211,7 @@ ul li a:hover::after {
   ul
   .inner-icons
   .sidebar-icon:last-child {
-  margin-left: -1.5rem;
+  margin-left: -1.7rem;
 }
 
 .navigation-bar li {
@@ -230,7 +228,7 @@ ul li a:hover::after {
 }
 
 .hero-content-section > .hero {
-  width: 375px;
+  width: 372px;
   height: 600px;
   position: relative;
 }
@@ -298,7 +296,7 @@ ul li a:hover::after {
 /* Main contents */
 .biggest-labels > h2 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 600;
   font-family: var(--font-family-heading);
   color: var(---primary-clr-4);
@@ -339,7 +337,7 @@ ul li a:hover::after {
 }
 
 .main-gen > .gen-collection > .second-link > img {
-  margin: 0 0 1rem 0.8rem;
+  margin: 0 0 0.7rem 0.8rem;
 }
 
 .main-gen > .gen-collection > .third-link > img {
@@ -347,7 +345,7 @@ ul li a:hover::after {
 }
 
 .main-gen > .gen-collection > .fourth-link > img {
-  margin: 2rem 1rem 0 0.8rem;
+  margin: 2rem 0.7rem 0 0.8rem;
 }
 
 /* Button for men */
@@ -385,11 +383,11 @@ ul li a:hover::after {
 }
 
 .women-section-gen-cta > .woman-collection-second > a > img {
-  margin: 0 0 1.5rem 0.8rem;
+  margin: 0 0 1rem 0.8rem;
 }
 
 .women-section-gen-cta > .woman-collection-fourth > a > img {
-  margin: 0 0 1.5rem 0.8rem;
+  margin: 0 0.8rem 0.8rem;
 }
 
 /* Women section button */
@@ -446,11 +444,12 @@ ul li a:hover::after {
 }
 
 .login-wrapper > .sign-up-wrapper > h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   text-align: center;
   font-family: var(--font-family-heading);
   font-weight: 800;
+  padding-bottom: 2rem;
 }
 
 .login-wrapper > .sign-up-wrapper > h2 + .sign-up-free {
@@ -486,7 +485,8 @@ ul li a:hover::after {
 /*  Footer*/
 .gen-footer-cta {
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 5rem;
+  width: 375px;
   border: 1px solid;
   background-color: #000;
   color: #fff;
@@ -501,6 +501,10 @@ ul li a:hover::after {
   font-size: 1.3rem;
   font-family: var(--font-family-heading);
   font-weight: 600;
+}
+
+.footer-link {
+  margin-right: 2rem;
 }
 
 .gen-footer-cta
@@ -544,11 +548,11 @@ ul li a:hover::after {
   > .follow-us-cta
   + .social-icons
   > .social-link:nth-child(1) {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .contact-us-wrapper > .contact-us-cta > a {
   font-family: var(--font-family-heading);
   font-size: 1rem;
-  margin-left: 1.3rem;
+  margin-left: 1rem;
 }
